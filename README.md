@@ -1,6 +1,6 @@
 # RPC PoC - Thrift Calculator
 
-This repository contains two projects:
+This repository contains two projects and uses Apache Thrift as the RPC framework:
 
 - `calculator-server/` — Java Spring Boot Thrift server
 - `calculator-client/` — Node.js MVC (Express + EJS) web client
@@ -9,8 +9,8 @@ Below are the minimal prerequisites and instructions to run both locally on macO
 
 ## Prerequisites
 
-- Java 17+ and Maven
-- Node.js 18+ and npm
+- Java 24+ and Maven
+- Node.js 22+ and npm
 
 ## How to run
 
