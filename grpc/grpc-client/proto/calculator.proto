@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package calculator;
+
+// Java package options
+option java_multiple_files = true;
+option java_package = "com.example.calculator.grpc";
+option java_outer_classname = "CalculatorProto";
+
+// Error message for calculation exceptions
+message CalculationError {
+  string message = 1;
+}
+
+// Request message for binary operations
+message BinaryOperationRequest {
+  double num1 = 1;
+  double num2 = 2;
+}
+
+// Response message for operations
+message CalculationResponse {
+  double result = 1;
+}
+
+// Calculator service definition
+service Calculator {
+  rpc Add(BinaryOperationRequest) returns (CalculationResponse);
+  rpc Subtract(BinaryOperationRequest) returns (CalculationResponse);
+  rpc Multiply(BinaryOperationRequest) returns (CalculationResponse);
+  rpc Divide(BinaryOperationRequest) returns (CalculationResponse);
+}

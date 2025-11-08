@@ -1,0 +1,19 @@
+{
+  "name": "grpc-client",
+  "version": "1.0.0",
+  "description": "gRPC Node.js Calculator Client",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "@grpc/grpc-js": "^1.12.4",
+    "@grpc/proto-loader": "^0.7.15"
+  }
+}
